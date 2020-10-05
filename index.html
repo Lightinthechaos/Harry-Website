@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Harry's Website</title>
+</head>
+<body>
+    <audio src="./audio/rain_thunder.mp3" id="auto">Your browser does not support the audio element.</audio>
+    <div>
+        <div class="first"> 
+            
+            <nav id="nav">
+                <a href="" style="text-decoration:none;"><h1 id="logo" style="color: black;">Girrafe</h1></a>
+                
+                <ul class="nav-links">
+                    <li><a href="javascript:;" onclick="scolldown('home')">Home</a></li>
+                    <li><a href="javascript:;" onclick="scolldown('me')">Me</a></li>
+                    <li><a href="javascript:;" onclick="scolldown('gallery')">Gallery</a></li>
+                    <li><a href="javascript:;" onclick="scolldown('say')">Say something</a></li>
+                    
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="display_side_nav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>    
+
+                </ul>
+            </nav>
+            <div class="small-nav">
+                <ul>
+                    <li><a href="javascript:;" onclick="scolldown('home')">Home</a></li>
+                    <li><a href="javascript:;" onclick="scolldown('me')">Me</a></li>
+                    <li><a href="javascript:;" onclick="scolldown('gallery')">Gallery</a></li>
+                    <li><a href="javascript:;" onclick="scolldown('say')">Say something</a></li>
+                </ul>
+            </div>
+            <div id="result"></div>
+            <div class="big-text">
+                <h4>Hello&nbsp&nbsp&nbsp你好</h1>
+                <h1>I'm Harry Liu</h4>
+                <h4>My friends call me Girrafe</h4>
+                <h4>I'm a New Graduate in Computer Science</h4>
+                <h4>And I'm a pluviophile</h4>
+                
+                <div id="myBtn"><i id="play" onclick="change('play')" class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div>
+
+                <div class="music">
+                    <div><i id="volumeUp" onclick="volumeUp()" class="fa fa-volume-up" aria-hidden="true"></i></div>
+                    <div><i id="volumeDown" onclick="volumeDown()" class="fa fa-volume-down" aria-hidden="true"></i></div>
+                </div>               
+                
+            </div>
+            
+            <video id="videobg" src="video/rainning.mp4" autoplay loop muted> Your browser does not support the video tag.</video>
+            
+            <div class="intro">
+                <div class="intro-text">
+                    <h1 class="hide">
+                        <span class="text">Life is ephemeral but eternal</span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text">We only live once, so</span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text">carpe diem</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="slider"></div>
+        </div>
+
+        <!-- second area -->
+        <div class="second">
+            <div class="secwhite">
+                <div class="myphoto"><p class="bgImg"></p></div>
+            
+                <p class="aboutTitle" style="font-size: 1.5rem;">Welcome</p>
+                <p style="padding: 2rem 10rem 0rem 10rem;">
+                    I am a pragmatic and courageous, modest and serious, quick-thinking, and pursue the ultimate person. I have an optimistic and open attitude towards everything, and will not be constrained with the current state, for what I do not understand
+                    Knowledge and field, I will study hard. I have left home to purse my study since I was a child, during those days I have developed independence and strong adaptability. 
+                    I always think about problems in life and study from various aspects and seek solutions in essence solution. During the university, I actively participated in associations and volunteered to assume positions on campus. Outside school, 
+                    outdoor excersices became regulator of mmy life. 
+                </p>
+                <div class="thumbssection"> 
+                    <br>
+                    <div>
+                        <a href="javascript:;" onclick="add()"><i class="fa fa-thumbs-o-up fa-2x"></i></a>
+
+                        <span id="up">0</span>
+                    </div>
+                    <div>
+                        <a href="javascript:;" onclick="subtract()"><i class="fa fa-thumbs-o-down fa-2x"></i></a>
+                        <span id="down">0</span>
+                    </div>         
+                </div>
+            </div>   
+            <div class="interests">
+                <p style="color: white; font-size: 3rem; margin: 3rem; padding-top: 3rem;" >What I Enjoy</p>
+                <div class="interestDetails">
+                    <div class="container">
+                        <i style="color:green;" class="fa fa-keyboard-o fa-3x" aria-hidden="true"></i>
+                        <p>Programming</p>
+                        <p>Programming is alway my passion. Coding to me,is like solving swoonsom puzzle game. When night falls, make a cup of coffe and enjoy some quiet time just for myself</p>
+                    </div>
+                    <div class="container">
+                        <i style="color: green;" class="fa fa-book fa-3x" aria-hidden="true"></i>
+                        <p>Learning</p>
+                        <p>I do not enjoy the learning process but I like the results after learning. I will feel confident after I mastered some knowledge. So this reason motivite me to keep learning</p>
+                    </div>
+                    <div class="container">
+                        <i style="color: green;" class="fa fa-leaf fa-3x" aria-hidden="true"></i>
+                        <p>Outdook Activities</p>
+                        <p>I really enjoy outdoor time with friends and family. I love to scuba dive, biking, hiking and camping. The world is fascinating, so carpe diem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third area -->
+        <div class="third">
+            <div id="test"></div>
+            <div class="thirdgallery">
+                <p style="font-family: 'Nunito', sans-serif; color: black; font-size: 2rem; margin-bottom: 3rem; padding-top: 3rem; text-align: center;">Things Around Me</p>
+                <div class="gallery">
+                    <a href="./images/fall.jpg" data-lightbox="mygallery" data-title="Frozen Fall"> <img src="./images/fall-small.jpg" alt="falls view"> </a>
+                    <a href="./images/hotpot.jpg" data-lightbox="mygallery" data-title="Party&Hotpot"> <img src="./images/hotpot-small.jpg" alt="Hotpot"> </a>
+                    <a href="./images/ontheroad.jpg" data-lightbox="mygallery" data-title="On the Road"> <img src="./images/ontheroad-small.jpg" alt="road view"> </a>
+                    <a href="./images/QQ.jpg" data-lightbox="mygallery" data-title="QQ"> <img src="./images/QQ-small.jpg" alt="QQ"> </a>
+                    <a href="./images/wonderland.jpg" data-lightbox="mygallery" data-title="Hunting Night"> <img src="./images/wonderland-small.jpg" alt="Hunting Night"> </a>
+                    <a href="./images/dive.jpg" data-lightbox="mygallery" data-title="Scuba Dive"> <img src="./images/dive-small.jpg" alt="Scuba Dive"> </a>
+                </div>
+
+            </div>
+            <div class="thirdinside">
+                <p>The world is so big</p>
+                <p>It's so lucky to meet you in this random world</p>
+                <p style="padding-bottom: 2rem;">Why don't you write a message at this moment to leave a trace in my website</p>
+                <form action="/action.php" target="iframename" method="post" action="action.php">
+                    <textarea id="inputText" name="inputText" type="text" placeholder="Wirte anything you want to say to me, to this website, or to this world....."></textarea><br>
+                    <button type="submit" onclick="func()">submit</button>
+                
+                </form>
+                <iframe id="iframeid" name="iframename" style="display:none;"></iframe> 
+            </div>
+        </div>
+        <div class="fourth">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="color: whitesmoke; text-align: center;">© 2020 My Website. All rights reserved | Designed by Harry Liu</p>
+        </div>
+        
+    </div>
+    
+    <!-- javascript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
+            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" 
+            crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+
+
+</body>
+</html>

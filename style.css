@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* first section */
+.first{
+    height: 80vh;
+    
+}
+/* .landing{
+    padding: 0rem 5rem; 
+} */
+a{
+    color: black;
+    text-decoration: none;
+}
+#videobg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+}
+nav{
+    background-color: papayawhip;
+    display: flex;
+    width: 100%;
+    padding: 0rem 4rem 0rem 5rem; 
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    position: fixed;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    
+}
+.nav-links li{
+    padding-left: 5rem;
+}
+.nav-links li:hover{
+    font-weight: bold;
+}
+.nav-links li:nth-child(5){
+    padding-left: 0;
+}
+.nav-links .icon {
+    display: none;
+}
+.small-nav{
+    width: 100%;
+    height: 20vh;
+    background-color: papayawhip;
+    float: right;
+    opacity: 0.5;
+    display: none;
+    position: fixed;
+}
+.small-nav ul{
+    float: right;
+    padding-top: 8vh;
+    list-style: none;
+}
+.small-nav ul li:hover{
+    font-weight: bold;
+}
+.big-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    background: rgb(144, 146, 129);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.intro-text{
+    color: rgb(233, 233, 233);
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+.music{
+    display: flex;
+}
+/* i {
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+    font-size: 0;
+} */
+.first i{
+    cursor: pointer;
+    margin: 10px;
+
+}
+.first i:hover{
+    background-color: rgba(107, 109, 114, 0.5); 
+}
+
+/* second section */
+.second{
+    height: 130vh;
+    border-top: 5px solid rgb(128,128,128);
+    background-color: rgba(252, 252, 252, 0.658);
+    background: url("./images/shoes.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.second p{
+    text-align: center;
+}
+.secwhite{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+}
+.myphoto{
+    padding: 2rem 0rem 0rem 0rem;
+}
+.bgImg{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+    width:120px;
+    height:120px; 
+    background: url("images/my_pic.jpg") no-repeat center;
+    background-size:120px;
+}
+/* .allintro{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+} */
+
+/* .myintro:hover{
+
+    animation: mymove 5s 1;
+
+}
+@keyframes mymove {
+    50% {border: 15px solid lightblue;}
+} */
+
+.thumbssection{
+    display: flex;
+    justify-content: center;
+    
+}
+.thumbssection i{
+    padding: 3rem 0rem 0rem 3rem;
+    color: gray;
+}
+.thumbssection i:hover{
+    color: black;
+}
+.interests p{
+    font-family: 'Hind', sans-serif;
+    color: white;
+    font-size: 1rem;
+    
+}
+.interestDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interestDetails p:nth-child(even){
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.interestDetails p:nth-child(odd){
+    padding: 0rem 1rem 1rem 1rem;
+}
+.interestDetails .container{
+    margin: 10px;
+    width: 30%;
+    min-height: 50%;
+    text-align: center;
+    background-color: rgb(158, 158, 152);
+    opacity: 0.5;
+}
+.interestDetails .container:hover{
+    background-color: rgb(23, 24, 20);
+    opacity: 0.5;
+}
+/* third section */
+.third{
+    border-top: 5px solid rgb(128,128,128);
+    height: 110vh;
+    background-color: rgb(252, 252, 252);
+    background: url("./images/city.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.thirdgallery{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+}
+.gallery{
+    text-align: center;
+    margin: 10px 50px;
+}
+.gallery a{
+    text-decoration: none   
+}
+.gallery img{
+    transition: 1s;
+    padding: 25px;
+    width: 200px;
+    
+}
+.gallery img:hover{
+    filter: grayscale(50%);
+    transform: scale(1.2);
+}
+.thirdinside{
+    padding-top: 3rem;
+}
+.thirdinside p{
+    font-weight: bold;
+    padding: 10px 35% 10px 35%;
+    font-size: 20px;
+}
+#inputText{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    font-family:"Times New Roman", Times, serif;  
+    font-size: 20px; 
+}
+form{
+    padding: 10px 32% 0rem 32%;
+}
+form textarea, button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* fourth section */
+.fourth{
+    
+    height: 15vh;
+    background-color: rgb(29, 29, 29);
+    
+}
+
+/* media section */
+/* @media only screen and (max-width: 598px){
+    .third{
+        height: 210vh;
+    }
+
+    
+} */
+
+@media only screen and (max-width: 505px){
+    .gallery a:nth-child(n+3){
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .gallery a:nth-child(n+5){
+        display: none;
+    }
+    .thirdgallery{
+        height: 100vh;
+    }
+    #videobg{
+        display: none;
+    }
+    .first{
+        background: url("./images/rain-fixed.PNG");
+        background-size: cover;
+    }
+    #myBtn{
+        display: none;
+    }
+    .music{
+        display: none;
+    }
+    .secwhite p:nth-child(3){
+        padding: 2rem 2rem 0rem 2rem !important ;
+    }
+    
+}
+@media only screen and (max-width: 800px){
+    .nav-links li:not(:nth-child(5)){
+        display: none;
+    }
+    .nav-links .icon {
+        display: block;
+    }
+    .thirdinside p{
+        padding: 10px 15% 10px 15%;
+        color: honeydew;
+    }
+    form{
+        padding: 10px 20% 0rem 20%;
+    }
+
+}
+
+@media only screen and (max-width: 1050px){
+    .interestDetails{
+        display: block;
+    }
+    .interestDetails .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    .second{
+        height: 190vh;
+    }
+    .secwhite{
+        height: 45%;
+    }
+    .interests p:nth-child(1){
+        margin: 0px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1320px){
+    .thirdgallery{
+        height: 70vh;
+    }
+    .third{
+        height: 135vh;
+    }
+}
